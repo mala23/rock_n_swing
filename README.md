@@ -1,7 +1,7 @@
 rock-swing
 ==========
 
-Rock &amp; Swing is a game of rock, paper, scissors built with ruby, using Sinatra DSL.
+Rock &amp; Swing is a game of rock, paper, scissors built with ruby, using Sinatra DSL – yes, that's why 'swing', smartass ;).
 
 ```
 
