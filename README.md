@@ -3,7 +3,8 @@ rock-swing
 
 Rock &amp; Swing is a game of rock, paper, scissors built with ruby, using Sinatra DSL.
 
-```no-highlight
+```
+
 Challenge: Rōnin Badge Test
 ---------------------------
 Knowing how to build web applications is getting us almost there as web developers!
@@ -21,12 +22,14 @@ Your task is to provide a Rock, Paper, Scissors game for them so they can play o
 As always you can use google your notes and everything else. This is a challenge for you and you only!
 
 Rōnin BANZAI!!!!
-----------------
+
 Bonus 1: Multiplayer
 Change the game so that two marketeers can play against each other (yes there are two of them).
 
 Bonus 2: Rock, Paper, Scissors, Spock, Lizard
 Use the special rules (you can find them here: http://en.wikipedia.org/wiki/Rock-paper-scissors-lizard-Spock)
+
+```
 
 Basic Rules
 - Rock beats Scissors
