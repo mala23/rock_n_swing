@@ -45,3 +45,33 @@ Basic Rules
 - Cucumber with Capybara
 
 ####CRC Cards
+
+#####Player
+
+It should:
+
+- Be able to choose a gesture
+
+It interacts with:
+- Game
+
+#####Computer
+
+It should:
+
+- Be able to choose a random gesture
+
+It interacts with:
+- Game
+
+#####Game
+
+It should:
+
+- Have a list of all loosing combinations
+- Be able to receive a chosen gesture
+- Be able to compare two chosen gestures and determine a winner
+
+It interacts with:
+- Player
+- Game
