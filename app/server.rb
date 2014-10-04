@@ -14,6 +14,7 @@ class RNS < Sinatra::Base
 
 	get '/' do
 		redirect to('/register')
+		# @username = session[:me]
 	end
 
 	get '/register' do
@@ -21,7 +22,20 @@ class RNS < Sinatra::Base
 	end
 
 	post '/choose' do
+		session[:me] = params[:username]
 		erb :choose
+	end
+
+	get '/choose' do
+		erb :choose
+	end
+
+	# Why do I need a post AND a get route in order to make it pass my cukes?
+
+	get '/result' do
+		puts session.inspect
+		@username = session[:me]
+		erb :result
 	end
 
 	# start the server if ruby file executed directly

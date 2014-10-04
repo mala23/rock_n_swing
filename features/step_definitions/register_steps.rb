@@ -1,27 +1,29 @@
 Given(/^I see "(.*?)"$/) do |text|
-  expect(page).to have_content(text)
+	expect(page).to have_content(text)
 end
 
 Given(/^I fill in the form "(.*?)"$/) do |field|
-  fill_in (field), :with => 'Jimmy'
+	fill_in (field), :with => 'Jimmy'
 end
 
 When(/^I click the button "(.*?)"$/) do |button|
-  click_button (button)
+	click_button (button)
 end
 
 Then(/^I should see "(.*?)"$/) do |text|
-  expect(page).to have_content(text)
+	expect(page).to have_content(text)
 end
 
-When(/^I choose "(.*?)"$/) do |link|
-  click_link(link)
+When(/^I choose Paper!$/) do
+	click_link('Paper!')
 end
 
-Then(/^I can click on "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
-end
+# Had to use string instead of interpolated regex-return to make it work
 
 Given(/^I am on the page "(.*?)"$/) do |page|
 	visit page
+end
+
+Then(/^I can click the button "(.*?)"$/) do |button|
+	click_button (button)
 end
