@@ -3,12 +3,11 @@
 		<h2>Choose your gesture:</h2>
 	</header>
 	<main class="flexbox-item">
-		<a id="rock" class="flexbox-item" href="/result">Rock!</a>
-
-		<a id="paper" class="flexbox-item" href="/result"></a>
-
-		<a href="/result">Paper!</a>
-
-		<a id="scissors" class="flexbox-item" href="/result">Scissors!</a>
+		<form action="/result" method="POST">
+			<button name="choose" value="Rock">Rock</button>
+			<button name="choose" value="Paper">Paper</button>
+			<button name="choose" value="Scissors">Scissors</button>
+		<input type="hidden" name="choose" value=<%= @choose %>>
+</form>
 	</main>
 </section>

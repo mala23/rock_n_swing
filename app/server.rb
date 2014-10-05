@@ -32,9 +32,15 @@ class RNS < Sinatra::Base
 
 	# Why do I need a post AND a get route in order to make it pass my cukes?
 
+	post '/result' do
+		session[:me] = params[:gesture]
+		erb :result
+	end
+
 	get '/result' do
-		puts session.inspect
+		p session.inspect
 		@username = session[:me]
+		@gesture = session[:me]
 		erb :result
 	end
 

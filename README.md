@@ -50,12 +50,13 @@ Basic Rules
 
 It should:
 
+- Have a name
 - Be able to choose a gesture
 
 It interacts with:
 - Game
 
-#####Computer
+#####AI
 
 It should:
 

@@ -1,0 +1,4 @@
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: partials/grids.\A        Load paths:\A          Compass::SpriteImporter\A          /Users/mala23/Projects/rock_n_swing/app/public/sass\A          /Users/mala23/.rvm/rubies/ruby-2.1.2/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets\A         on line 10 of /Users/mala23/Projects/rock_n_swing/app/public/sass/main.scss\A \A 5: // Partials\A 6: @import \"partials/reset\";\A 7: @import \"partials/typography\";\A 8: @import \"partials/buttons\";\A 9: @import \"partials/figures\";\A 10: @import \"partials/grids\";\A 11: // ...\A 12: \A 13: // Third-party"; }
