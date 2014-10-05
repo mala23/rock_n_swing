@@ -56,6 +56,7 @@ It should:
 It interacts with:
 - Game
 
+~~
 #####AI
 
 It should:
@@ -64,13 +65,17 @@ It should:
 
 It interacts with:
 - Game
+~~
+
+Decided to pack AI functionality in class Game.
 
 #####Game
 
 It should:
 
-- Have a list of all loosing combinations
+- Have a list of all winning combinations
 - Be able to receive a chosen gesture
+- Be able to choose a random gesture for the AI
 - Be able to compare two chosen gestures and determine a winner
 
 It interacts with:

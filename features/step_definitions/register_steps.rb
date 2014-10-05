@@ -27,3 +27,16 @@ end
 Then(/^I can click the button "(.*?)"$/) do |button|
 	click_button (button)
 end
+
+When(/^I choose Rock!$/) do
+	save_and_open_page
+	expect(page).to have_content("Rock")
+end
+
+When(/^I win$/) do
+	
+end
+
+When(/^I loose$/) do
+  pending # express the regexp above with the code you wish you had
+end

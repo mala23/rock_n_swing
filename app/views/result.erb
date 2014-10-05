@@ -2,14 +2,25 @@
 	<header class="flexbox-item">
 		<h2>Bo!...</h2>
 	</header>
-	<main class="flexbox-item">
-		<h2>Congratulations, you crushed it – </h2>
-		<h2><%= @name %>, you are an animal!</h2>
-		<main>
-			<%  %>
-		</main>
+
+	<main>
 		<form  name="playagain" action="/choose" method="get">
 			<button>Play Again!</button>
 		</form>
 	</main>
 </section>
+
+	<main class="flexbox-item">
+		<h2> <%= @player_gesture %> beats <% @ai_gesture %> </h2>
+		<h2>Congratulations, you crushed it – <%= @name %>, you are an animal!</h2>
+	</main>
+
+	<main class="flexbox-item">
+		<h2> <%= @ai_gesture %> beats <% @player_gesture %> </h2>
+		<h2>Really? – <%= @name %>, you are a looser.</h2>
+	</main>
+
+	<main class="flexbox-item">
+		<h2> <%= @player_gesture %> vs <% @ai_gesture %> </h2>
+		<h2>Draw! – <%= @name %>, keep trying!</h2>
+	</main>

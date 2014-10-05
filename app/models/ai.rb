@@ -1,9 +1,11 @@
-class AI
+# require_relative 'game'
 
-	attr_accessor :gesture
+# class AI
 
-	def initialize(gesture)
-		@gesture = gesture
-	end
+# 	attr_accessor :gesture
 
-end
+# 	def initialize
+# 		@gesture = game.gestures.sample
+# 	end
+
+# end

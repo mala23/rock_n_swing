@@ -22,7 +22,7 @@ class RNS < Sinatra::Base
 	end
 
 	post '/choose' do
-		session[:me] = params[:username]
+		session[:me] = params[:name]
 		erb :choose
 	end
 
@@ -33,12 +33,12 @@ class RNS < Sinatra::Base
 	# Why do I need a post AND a get route in order to make it pass my cukes?
 
 	post '/result' do
-		session[:me] = params[:gesture]
+		puts params.inspect
+		session[:gesture] = params[:gesture]
 		erb :result
 	end
 
 	get '/result' do
-		p session.inspect
 		@username = session[:me]
 		@gesture = session[:me]
 		erb :result
